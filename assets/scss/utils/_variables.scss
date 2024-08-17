@@ -8,14 +8,14 @@
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
+$gray-200: #DEE2E6 !default;
+$gray-300: #ADB5BD;//#dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$gray-600: #6c757d !default; //400
 $gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-800: #343a40 !default; //500
+$gray-900: #212529 !default; //600
 $black:    #000 !default;
 // scss-docs-end gray-color-variables
 
@@ -295,15 +295,36 @@ $cyans: (
   "cyan-800": $cyan-800,
   "cyan-900": $cyan-900
 ) !default;
+
+// ssw add new
+$primary-100: #FFFDF5 !default;
+$primary-200: #FFFBE5 !default;
+$primary-300: #E8E3DA !default;
+$primary-400: #6E6B67 !default;
+$primarys: (
+  "primary-100": $primary-100,
+  "primary-200": $primary-200,
+  "primary-300": $primary-300,
+  "primary-400": $primary-400,
+) !default;
+
+$accent-100: #E0EFDE !default;
+$accent-200: #569573 !default;
+$accent-300: #406C55 !default;
+$accents: (
+  "accent-100": $accent-100,
+  "accent-200": $accent-200,
+  "accent-300": $accent-300
+) !default;
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
+$primary:       $primary-200 !default;
+$secondary:     $accent-200 !default;
+$success:       #2CC585 !default;
+$info:          #4A72FF !default;
+$warning:       #FFB054 !default;
+$danger:        #D65F5F !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
@@ -416,7 +437,8 @@ $spacers: (
   4: $spacer * 1.5,    // 24px
   5: $spacer * 3,     // 48px
   6: $spacer * 2,     // 32px
-  7: $spacer * 0.875 // 14px
+  7: $spacer * 2.5, // 14px
+  8: $spacer * 0.875 // 14px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
