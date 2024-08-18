@@ -63,7 +63,8 @@ $colors: (
   "black":      $black,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-800,
+  "gray-light":  $gray-200
 ) !default;
 // scss-docs-end colors-map
 
@@ -338,7 +339,9 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "primary-light": $primary-100,
+  "accent-light": $accent-100
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -437,8 +440,9 @@ $spacers: (
   4: $spacer * 1.5,    // 24px
   5: $spacer * 3,     // 48px
   6: $spacer * 2,     // 32px
-  7: $spacer * 2.5, // 14px
-  8: $spacer * 0.875 // 14px
+  7: $spacer * 2.5, // 40px
+  8: $spacer * 0.875, // 14px
+  9: $spacer * 1.25
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -654,7 +658,7 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
+$h1-font-size:                $font-size-base * 3 !default; //2.5
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
@@ -810,8 +814,8 @@ $table-variants: (
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 // scss-docs-start input-btn-variables
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         1rem !default;//.375rem !default;
+$input-btn-padding-x:         1.5rem !default;//.75rem !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;
@@ -870,7 +874,7 @@ $btn-link-disabled-color:     $gray-600 !default;
 $btn-link-focus-shadow-rgb:   to-rgb(mix(color-contrast($link-color), $link-color, 15%)) !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           var(--#{$prefix}border-radius) !default;
+$btn-border-radius:          100px !default; //var(--#{$prefix}border-radius) !default;
 $btn-border-radius-sm:        var(--#{$prefix}border-radius-sm) !default;
 $btn-border-radius-lg:        var(--#{$prefix}border-radius-lg) !default;
 
