@@ -8,6 +8,7 @@
 @import "./utils/base";
 
 // 1. 元件，全部頁面都會用到
+@import './utils/text';
 @import './layout/header.scss';
 @import './layout/footer.scss';
 @import './components/button';

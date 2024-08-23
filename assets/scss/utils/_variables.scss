@@ -321,6 +321,7 @@ $accents: (
 
 // scss-docs-start theme-color-variables
 $primary:       $primary-200 !default;
+$primary-dark:  $primary-400 !default;
 $secondary:     $accent-200 !default;
 $success:       #2CC585 !default;
 $info:          #4A72FF !default;
@@ -341,7 +342,8 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark,
   "primary-light": $primary-100,
-  "accent-light": $accent-100
+  "accent-light": $accent-100,
+  "primary-dark" : $primary-dark
 ) !default;
 // scss-docs-end theme-colors-map
 
