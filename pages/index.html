@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>index</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
     <header>
       <div class="container py-10 border-top">
         <div
@@ -52,13 +55,11 @@
         </div>
       </div>
     </header>
-
     <!--主題區塊-->
     <div class="py-10">
       <section class="container">
-        <h2 class="h2 mb-4">熱門主題</h2>
+        <h2 class="h2 mb-4 fw-black">熱門主題</h2>
         <div class="row">
-          
           <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
             <article class="card border-leaf">
               <img
@@ -221,19 +222,102 @@
       </section>
     </div>
     <!--主題區塊-->
+    <!--精選文章-->
+    <div class="py-10 bg-primary-300">
+      <section class="container">
+        <h2 class="h2 mb-4 fw-black">精選文章</h2>
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-4">
+
+            <div class="swiper-pagination"></div>
+            
+            <p class="append-buttons">
+              <button class="prepage">上一頁</button>
+              <button class="nextpage">下一頁</button>
+            </p>
+          </div>
+          <div class="col-12 col-md-8 col-lg-8">
+            <div #swiperRef="" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card rounded-0" style="width: 18rem">
+                    <img
+                      src="../assets/images/articles-1.png"
+                      class="card-img-top rounded-0"
+                      alt="文章圖片1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+                      <p class="card-text">
+                        遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                      </p>
+                      <a href="#" class="text-secondary">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card rounded-0" style="width: 18rem">
+                    <img
+                      src="../assets/images/articles-1.png"
+                      class="card-img-top rounded-0"
+                      alt="文章圖片1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+                      <p class="card-text">
+                        遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                      </p>
+                      <a href="#" class="text-secondary">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card rounded-0" style="width: 18rem">
+                    <img
+                      src="../assets/images/articles-1.png"
+                      class="card-img-top rounded-0"
+                      alt="文章圖片1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+                      <p class="card-text">
+                        遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                      </p>
+                      <a href="#" class="text-secondary">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          
+          </div>
+
+        </div>
+        
+
+      </section>
+    </div>
+    <!--精選文章-->
     <!--活動區塊-->
     <div class="py-10 bg-primary">
       <section class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 col-lg-6">
             <h4 class="h4 mb-9 text-primary-dark text-center">
-              \ 母親節強檔活動 / 
+              \ 母親節強檔活動 /
             </h4>
             <h2 class="h2 mb-9 text-dark text-center fw-black">
               家庭訂閱方案限時 7 折
             </h2>
             <div class="d-flex justify-content-center">
-              <ul class="text-gray-400 fs-6" style="list-style-image:url('../assets/images/icons/ulicon.png');">
+              <ul
+                class="text-gray-400 fs-6"
+                style="
+                  list-style-image: url('../assets/images/icons/ulicon.png');
+                "
+              >
                 <li class="ps-2 mb-3">每月最新文章無限閱讀</li>
                 <li class="ps-2 mb-3">專屬會員限定內容</li>
                 <li class="ps-2 mb-3">定期電子報</li>
@@ -243,28 +327,38 @@
               </ul>
             </div>
             <div class="d-flex justify-content-center">
-              <button class="btn btn-accent mx-auto">
-                我想了解
-              </button>
+              <button class="btn btn-accent mx-auto">我想了解</button>
             </div>
           </div>
           <div class="position-relative mb-n10">
             <div class="position-absolute bottom-0 start-0">
-              <img src="../assets/images/bg-1.png" alt="主題背景裝飾1" class="img-fluid d-none d-md-block d-lg-block">
+              <img
+                src="../assets/images/bg-1.png"
+                alt="主題背景裝飾1"
+                class="img-fluid d-none d-md-block d-lg-block"
+              />
             </div>
             <div class="position-absolute bottom-0 end-0">
-              <img src="../assets/images/bg-2.png" alt="主題背景裝飾2" class="img-fluid d-none d-md-block d-lg-block">
-              <img src="../assets/images/bg-2-sm.png" alt="主題背景手機板裝飾" class="img-fluid d-block d-md-none d-lg-none">
+              <img
+                src="../assets/images/bg-2.png"
+                alt="主題背景裝飾2"
+                class="img-fluid d-none d-md-block d-lg-block"
+              />
+              <img
+                src="../assets/images/bg-2-sm.png"
+                alt="主題背景手機板裝飾"
+                class="img-fluid d-block d-md-none d-lg-none"
+              />
             </div>
           </div>
         </div>
       </section>
-
     </div>
     <!--活動區塊-->
 
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
