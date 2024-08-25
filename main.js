@@ -16,7 +16,6 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 24,
     },
   },
-  centeredSlides: true,
   pagination: {
     el: ".swiper-pagination",
     type: "fraction",
@@ -29,11 +28,11 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+
 document.querySelector(".prepage").addEventListener("click", function (e) {
   e.preventDefault();
   var currentPage = swiper.activeIndex - 1;
-  // 更新頁碼
-  var page = document.querySelector(".page");
+  
   swiper.slideTo(currentPage, 0);
 });
 document.querySelector(".nextpage").addEventListener("click", function (e) {
@@ -45,6 +44,10 @@ document.querySelector(".nextpage").addEventListener("click", function (e) {
 
 // Select the node that will be observed for mutations
 const targetNode = document.querySelector(".swiper-pagination");
+
+// 初始化頁數
+var page = document.querySelector(".page");
+      page.innerHTML = targetNode.innerHTML;
 
 // Options for the observer (which mutations to observe)
 const config = { attributes: true, childList: true, subtree: true};

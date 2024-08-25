@@ -17,15 +17,24 @@
 
 /* 按鈕中間畫線 */
 
-.line::before {
-  width: 80%;
-  height: 1px;
-  content: "";
-  background-color: $gray-600;
-  /*位移*/
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  z-index: 1;
+.line{
+
+  &::before{
+    width: 50%;
+    height: 1px;
+    content: "";
+    background-color: $gray-600;
+    /*位移*/
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    @media(min-width: 768px){
+      width: 25%;
+    }
+    @media(min-width: 992px){
+      width: 40%;
+    }
+  }
 }
