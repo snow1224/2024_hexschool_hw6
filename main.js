@@ -67,3 +67,19 @@ const observer = new MutationObserver(callback);
 
 // Start observing the target node for configured mutations
 observer.observe(targetNode, config);
+
+/**
+ * 熱門文章的swiper
+ */
+var swiper = new Swiper(".mobileSwiper", {
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 48,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 24,
+    }
+  }
+});
