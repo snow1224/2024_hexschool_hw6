@@ -73,11 +73,11 @@ observer.observe(targetNode, config);
  */
 var swiper = new Swiper(".mobileSwiper", {
   breakpoints: {
-    992: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 48,
     },
-    768: {
+    372: {
       slidesPerView: 1,
       spaceBetween: 24,
     }

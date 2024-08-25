@@ -518,14 +518,265 @@
       <section class="container">
         <h2 class="h2 mb-4 fw-black text-space-1">大家都在看</h2>
         <div class="row">
-          <section class="col-3 d-none d-md-none d-lg-block"></section>
-          <section class="col-7 d-none d-md-none d-lg-block"></section>
-          <section class="col-12 d-block d-md-block-d-lg-none">
+          <section class="col-3 d-none d-md-none d-lg-block">
 
+            <ul class="nav flex-column nav-pills shadow mb-2 p-4 mb-2 min-vh-100" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <li>
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" 
+                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
+                        ria-selected="true">
+                        Home
+                </button>
+              </li>
+              <li>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" 
+                        data-bs-target="#v-pills-profile" type="button" role="tab" 
+                        aria-controls="v-pills-profile" aria-selected="false">
+                        Profile
+                </button>
+
+              </li>
+              <li>
+                <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" 
+                        data-bs-target="#v-pills-disabled" type="button" role="tab" 
+                        aria-controls="v-pills-disabled" aria-selected="false" disabled>
+                        Disabled
+                </button>
+
+              </li>
+              <li>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" 
+                        data-bs-target="#v-pills-messages" type="button" role="tab" 
+                        aria-controls="v-pills-messages" aria-selected="false">
+                        Messages
+                </button>
+
+              </li>
+              <li>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" 
+                        data-bs-target="#v-pills-settings" type="button" role="tab" 
+                        aria-controls="v-pills-settings" aria-selected="false">
+                        Settings
+                </button>
+
+              </li>
+              
+            </ul>
+
+          </section>
+          <section class="col-9 d-none d-md-none d-lg-block shadow mb-2 min-vh-100">
+
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+            </div>
+          </section>
+
+          <section class="col-12 d-block d-md-block d-lg-none">
             <div #swiperRef="" class="swiper mobileSwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-
+                  <article
+                  class="card shadow mb-2 border-0"
+                  style="max-width: 324px"
+                >
+                  <div class="card-body p-3">
+                    <h5 class="card-title h5 fw-black text-start text-secondary">
+                      酒精路跑地圖
+                    </h5>
+                    <ul class="card-text text-gray-dark list-unstyled text-start fw-bold fs-6">
+                        <li>｜城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                        <li>｜你要的調酒師在這裡！五月全台酒...</li>
+                        <li>｜台南老宅手工酒藏,尋味百年人文釀意</li>
+                    </ul>
+                  <img
+                    src="../assets/images/hots-1-sm.png"
+                    class="img-fluid d-block d-md-block d-lg-none mb-3"
+                    alt="文章手機板圖片1"
+                  />
+                  <div class="d-flex flex-wrap mb-3">
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #夜貓行程
+                    </span>
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #barhopping
+                    </span>
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #全台酒吧
+                    </span>
+                  </div>
+                    <a
+                      href="#"
+                      class="text-secondary fw-bold fs-6 text-decoration-none text-space-1"
+                      >View More
+                      <i class="bi bi-arrow-right"></i>
+                      </a
+                    >
+                  </div>
+                </article>
+                </div>
+                <div class="swiper-slide">
+                  <article
+                  class="card shadow mb-2 border-0"
+                  style="max-width: 324px"
+                >
+                  <div class="card-body p-3">
+                    <h5 class="card-title h5 fw-black text-start text-secondary">
+                      台北拉麵圖鑑
+                    </h5>
+                    <ul class="card-text text-gray-dark list-unstyled text-start fw-bold fs-6">
+                        <li>｜城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                        <li>｜你要的調酒師在這裡！五月全台酒...</li>
+                        <li>｜台南老宅手工酒藏,尋味百年人文釀意</li>
+                    </ul>
+                  <img
+                    src="../assets/images/hots-3-sm.png"
+                    class="img-fluid d-block d-md-block d-lg-none mb-3"
+                    alt="文章手機板圖片1"
+                  />
+                  <div class="d-flex flex-wrap mb-3">
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #雞白湯
+                    </span>
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #拉麵
+                    </span>
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #台北美食
+                    </span>
+                  </div>
+                    <a
+                      href="#"
+                      class="text-secondary fw-bold fs-6 text-decoration-none text-space-1"
+                      >View More
+                      <i class="bi bi-arrow-right"></i>
+                      </a
+                    >
+                  </div>
+                </article>
+                </div>
+                <div class="swiper-slide">
+                  <article
+                  class="card shadow mb-2 border-0"
+                  style="max-width: 324px"
+                >
+                  <div class="card-body p-3">
+                    <h5 class="card-title h5 fw-black text-start text-secondary">
+                      海島自由行
+                    </h5>
+                    <ul class="card-text text-gray-dark list-unstyled text-start fw-bold fs-6">
+                        <li>｜私島慢活島嶼生活 - 在熱帶天堂品...</li>
+                        <li>｜海島漂流記 - 在陽光、沙灘和比基...</li>
+                        <li>｜島嶼蹤跡 - 揭開加勒比海上世外桃...</li>
+                    </ul>
+                  <img
+                    src="../assets/images/hots-4-sm.png"
+                    class="img-fluid d-block d-md-block d-lg-none mb-3"
+                    alt="文章手機板圖片1"
+                  />
+                  <div class="d-flex flex-wrap mb-3">
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #熱帶國家
+                    </span>
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #海邊
+                    </span>
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #無敵海景
+                    </span>
+                  </div>
+                    <a
+                      href="#"
+                      class="text-secondary fw-bold fs-6 text-decoration-none text-space-1"
+                      >View More
+                      <i class="bi bi-arrow-right"></i>
+                      </a
+                    >
+                  </div>
+                </article>
+                </div>
+                <div class="swiper-slide">
+                  <article
+                  class="card shadow mb-2 border-0"
+                  style="max-width: 324px"
+                >
+                  <div class="card-body p-3">
+                    <h5 class="card-title h5 fw-black text-start text-secondary">
+                      短天數出國推薦
+                    </h5>
+                    <ul class="card-text text-gray-dark list-unstyled text-start fw-bold fs-6">
+                        <li>｜72小時東京遊走 - 當個時尚東京通</li>
+                        <li>｜48小時曼谷遊玩全攻略 </li>
+                        <li>｜三天兩夜賞櫻微醺東京</li>
+                    </ul>
+                  <img
+                    src="../assets/images/hots-5-sm.png"
+                    class="img-fluid d-block d-md-block d-lg-none mb-3"
+                    alt="文章手機板圖片1"
+                  />
+                  <div class="d-flex flex-wrap mb-3">
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #說走就走
+                    </span>
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #出國玩
+                    </span>
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #東亞
+                    </span>
+                  </div>
+                    <a
+                      href="#"
+                      class="text-secondary fw-bold fs-6 text-decoration-none text-space-1"
+                      >View More
+                      <i class="bi bi-arrow-right"></i>
+                      </a
+                    >
+                  </div>
+                </article>
+                </div>
+                <div class="swiper-slide">
+                  <article
+                  class="card shadow mb-2 border-0"
+                  style="max-width: 324px"
+                >
+                  <div class="card-body p-3">
+                    <h5 class="card-title h5 fw-black text-start text-secondary">
+                      週末露營趣
+                    </h5>
+                    <ul class="card-text text-gray-dark list-unstyled text-start fw-bold fs-6">
+                        <li>｜週末說走就走露營記</li>
+                        <li>｜城市野營日記</li>
+                        <li>｜和寵物去露營 - 大自然之旅的雙倍...</li>
+                    </ul>
+                  <img
+                    src="../assets/images/hots-2-sm.png"
+                    class="img-fluid d-block d-md-block d-lg-none mb-3"
+                    alt="文章手機板圖片1"
+                  />
+                  <div class="d-flex flex-wrap mb-3">
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #戶外
+                    </span>
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #露營控
+                    </span>
+                    <span class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11">
+                      #凹豆
+                    </span>
+                  </div>
+                    <a
+                      href="#"
+                      class="text-secondary fw-bold fs-6 text-decoration-none text-space-1"
+                      >View More
+                      <i class="bi bi-arrow-right"></i>
+                      </a
+                    >
+                  </div>
+                </article>
                 </div>
               </div>
             </div>
