@@ -41,3 +41,42 @@
     }
   }
 }
+
+.menu{
+    
+  &-title{
+      display: flex;
+      align-items: center;
+      color: $gray-900;
+      padding: 16px;
+      font-size: $h5-font-size;
+      font-weight: 900;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      margin-bottom: 24px;
+      span{
+          margin-right: 16px;
+      }
+      &:hover{
+          color: $secondary;
+      }
+      &:active{
+        background-color: $accent-100;
+      }
+  }
+  li:hover{
+      color: $secondary;
+      cursor: pointer;
+  }
+  .active{
+      background-color: $accent-100;
+  }
+}
+
+.rounded-start-7{
+  border-radius: 1.25rem 0 0 1.25rem;
+}
+
+.rounded-end-7{
+  border-radius: 0 1.25rem 1.25rem 0;
+}
