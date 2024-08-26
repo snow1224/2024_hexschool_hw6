@@ -71,7 +71,7 @@ observer.observe(targetNode, config);
 /**
  * 熱門文章的swiper
  */
-var swiper = new Swiper(".mobileSwiper", {
+var mobileSwiper = new Swiper(".mobileSwiper", {
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -82,4 +82,40 @@ var swiper = new Swiper(".mobileSwiper", {
       spaceBetween: 24,
     }
   }
+});
+
+/**
+ * 品味生活的swiper
+ */
+var lifeSwiper = new Swiper(".lifeSwiper", {
+  
+  breakpoints: {
+    992: {
+      direction: "horizontal",
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+    768: {
+      direction: "horizontal",
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    372: {
+      direction: "vertical",
+      slidesPerView: 3,
+      spaceBetween: 0,
+    }
+  }
+});
+document.querySelector(".prepage-life").addEventListener("click", function (e) {
+  e.preventDefault();
+  var currentPage = lifeSwiper.activeIndex - 1;
+  
+  lifeSwiper.slideTo(currentPage, 0);
+});
+document.querySelector(".nextpage-life").addEventListener("click", function (e) {
+  e.preventDefault();
+  var currentPage = lifeSwiper.activeIndex + 1;
+
+  lifeSwiper.slideTo(currentPage, 0);
 });

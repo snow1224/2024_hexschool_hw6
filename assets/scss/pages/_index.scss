@@ -42,6 +42,31 @@
   }
 }
 
+.line-life{
+
+  &::before{
+    width: 40%;
+    height: 1px;
+    content: "";
+    background-color: $gray-600;
+    /*位移*/
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    @media(min-width: 372px){
+      width: 20%;
+    }
+    @media(min-width: 768px){
+      width: 25%;
+    }
+    @media(min-width: 992px){
+      width: 30%;
+    }
+  }
+}
+
 .menu{
     
   &-title{
