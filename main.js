@@ -23,9 +23,7 @@ var swiper = new Swiper(".mySwiper", {
   keyboard: {
     enabled: true,
   },
-  fadeEffect: {
-    crossFade: true,
-  },
+  
 });
 
 
@@ -118,4 +116,22 @@ document.querySelector(".nextpage-life").addEventListener("click", function (e) 
   var currentPage = lifeSwiper.activeIndex + 1;
 
   lifeSwiper.slideTo(currentPage, 0);
+});
+
+/**
+ * 提案的swiper
+ */
+var projectSwiper = new Swiper(".projectSwiper", {
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 48,
+      centeredSlides: true
+    },
+    372: {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      centeredSlides: true
+    }
+  }
 });
