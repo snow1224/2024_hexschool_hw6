@@ -64,7 +64,8 @@ $colors: (
   "white":      $white,
   "gray":       $gray-600,
   "gray-dark":  $gray-800,
-  "gray-light":  $gray-200
+  "gray-light":  $gray-200,
+  "gray-300":   $gray-300,
 ) !default;
 // scss-docs-end colors-map
 
@@ -1679,7 +1680,7 @@ $breadcrumb-item-padding-x:         .5rem !default;
 $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          var(--#{$prefix}secondary-color) !default;
-$breadcrumb-active-color:           var(--#{$prefix}secondary-color) !default;
+$breadcrumb-active-color:           $secondary !default;//var(--#{$prefix}secondary-color) !default;
 $breadcrumb-divider:                quote("/") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
