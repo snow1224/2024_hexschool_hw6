@@ -107,20 +107,23 @@ var lifeSwiper = new Swiper(".lifeSwiper", {
     },
   },
 });
-document.querySelector(".prepage-life").addEventListener("click", function (e) {
-  e.preventDefault();
-  var currentPage = lifeSwiper.activeIndex - 1;
 
-  lifeSwiper.slideTo(currentPage, 0);
-});
-document
-  .querySelector(".nextpage-life")
-  .addEventListener("click", function (e) {
+if(document.querySelector(".prepage-life")!=undefined){
+  document.querySelector(".prepage-life").addEventListener("click", function (e) {
     e.preventDefault();
-    var currentPage = lifeSwiper.activeIndex + 1;
-
+    var currentPage = lifeSwiper.activeIndex - 1;
+  
     lifeSwiper.slideTo(currentPage, 0);
   });
+  document
+    .querySelector(".nextpage-life")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      var currentPage = lifeSwiper.activeIndex + 1;
+  
+      lifeSwiper.slideTo(currentPage, 0);
+    });
+}
 
 /**
  * 提案的swiper
@@ -138,4 +141,13 @@ var projectSwiper = new Swiper(".projectSwiper", {
       centeredSlides: true,
     },
   },
+});
+
+/**
+ * 延伸文章swiper
+ */
+var extendSwiper = new Swiper(".extendSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  centeredSlides: true,
 });
